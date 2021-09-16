@@ -1,0 +1,7 @@
+{
+  "name": "Veterimon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
