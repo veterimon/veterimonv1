@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomeNaoLogadaPageRoutingModule } from './home-nao-logada-routing.module';
+import { HomeLogadaPageRoutingModule } from './home-logada-routing.module';
 
-import { HomeNaoLogadaPage } from './home-nao-logada.page';
+import { HomeLogadaPage } from './home-logada.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomeNaoLogadaPageRoutingModule
+    HomeLogadaPageRoutingModule
   ],
-  declarations: [HomeNaoLogadaPage]
+  declarations: [HomeLogadaPage]
 })
-export class HomeNaoLogadaPageModule {}
+export class HomeLogadaPageModule {}

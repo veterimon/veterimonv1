@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CadastrarPageRoutingModule } from './cadastrar-routing.module';
+import { CadastroPageRoutingModule } from './cadastro-routing.module';
 
-import { CadastrarPage } from './cadastrar.page';
+import { CadastroPage } from './cadastro.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CadastrarPageRoutingModule
+    CadastroPageRoutingModule
   ],
-  declarations: [CadastrarPage]
+  declarations: [CadastroPage]
 })
-export class CadastrarPageModule {}
+export class CadastroPageModule {}

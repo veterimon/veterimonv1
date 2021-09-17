@@ -11,6 +11,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+
   {
     path: 'sobre',
     loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
@@ -19,14 +20,7 @@ const routes: Routes = [
     path: 'contato',
     loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
   },
-  {
-    path: 'cadastrar',
-    loadChildren: () => import('./cadastrar/cadastrar.module').then( m => m.CadastrarPageModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
+
   {
     path: 'logout',
     loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
@@ -51,10 +45,20 @@ const routes: Routes = [
     path: 'agendar-nova-consulta',
     loadChildren: () => import('./agendar-nova-consulta/agendar-nova-consulta.module').then( m => m.AgendarNovaConsultaPageModule)
   },
+  
   {
-    path: 'home-nao-logada',
-    loadChildren: () => import('./home-nao-logada/home-nao-logada.module').then( m => m.HomeNaoLogadaPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'home-logada',
+    loadChildren: () => import('./home-logada/home-logada.module').then( m => m.HomeLogadaPageModule)
+  },
+
 ];
 
 @NgModule({
