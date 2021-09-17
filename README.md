@@ -1,7 +1,11 @@
-## :star2: Sobre
-## :star2: Screenshots
+![Ionic](https://img.shields.io/badge/framework-ionic%205-yellowgreen)
+![Angular](https://img.shields.io/badge/framework-angular-blue)
 
-##  :star2: Instalação
+
+##  Sobre
+## Screenshots
+
+## Instalação
 ```bash
 npm install -g @ionic/cli
 ```
