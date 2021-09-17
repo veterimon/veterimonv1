@@ -2,7 +2,7 @@
 ![Angular](https://img.shields.io/badge/framework-angular-blue)
 
 
-##  Sobre
+## Sobre
 ## Screenshots
 
 ## Instalação
