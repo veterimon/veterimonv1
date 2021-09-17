@@ -1,7 +1,7 @@
-## Sobre
-## Screenshots
+## :star2: Sobre
+## :star2: Screenshots
 
-## Instalação
+##  :star2: Instalação
 ```bash
 npm install -g @ionic/cli
 ```
