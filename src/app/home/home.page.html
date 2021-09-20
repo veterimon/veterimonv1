@@ -6,6 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-menu contentId="menu" menuId="menu" side="start" type="overlay">
   <ion-header>
     <ion-toolbar>
@@ -34,26 +35,31 @@
 
 
 <ion-row justify-content-center align-items-center style='height: 100%'>
-  <ion-content class="auth-form">
+
+
+  <ion-content>
     <ion-grid>
       <ion-row>
+
         <ion-col align-self-center>
           <ion-button routerLink="/cadastro" expand="block" color="primary">Cadastro</ion-button>
-  
+
           <p></p>
-  
+
           <ion-button routerLink="/login" expand="block" color="danger">Entre</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
-  
-  </ion-content>
-  </ion-row>
 
-  <ion-tabs>
+  </ion-content>
+</ion-row>
+
+
+
+
   <ion-tab-bar color="" slot="bottom">
 
-    
+
     <ion-tab-button tab="home">
       <ion-icon name="home-outline"></ion-icon>
       <ion-label>Home</ion-label>
@@ -67,9 +73,3 @@
 
 
   </ion-tab-bar>
-</ion-tabs>
-
- 
-  
-  
-
