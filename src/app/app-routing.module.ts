@@ -16,23 +16,20 @@ const routes: Routes = [
     path: 'sobre',
     loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
   },
+
   {
     path: 'contato',
     loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
   },
 
   {
-    path: 'logout',
-    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
-  },
-  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
-  {
+ /*  {
     path: 'perfil-pokemon',
     loadChildren: () => import('./perfil-pokemon/perfil-pokemon.module').then( m => m.PerfilPokemonPageModule)
-  },
+  }, */
   {
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
@@ -41,10 +38,10 @@ const routes: Routes = [
     path: 'consultas',
     loadChildren: () => import('./consultas/consultas.module').then( m => m.ConsultasPageModule)
   },
-  {
+ /*  {
     path: 'agendar-nova-consulta',
     loadChildren: () => import('./agendar-nova-consulta/agendar-nova-consulta.module').then( m => m.AgendarNovaConsultaPageModule)
-  },
+  }, */
   
   {
     path: 'login',
@@ -58,6 +55,7 @@ const routes: Routes = [
     path: 'home-logada',
     loadChildren: () => import('./home-logada/home-logada.module').then( m => m.HomeLogadaPageModule)
   },
+  
 
 ];
 
