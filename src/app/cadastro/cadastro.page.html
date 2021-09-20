@@ -1,16 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cadastro</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large"></ion-title>
+      <ion-title>CADASTRO</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-menu contentId="menu" menuId="menu" side="start" type="overlay">
     <ion-header>
       <ion-toolbar>
@@ -18,36 +12,20 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-item button routerLink="/main/sobre">
+      <ion-item button routerLink="/sobre">
         <ion-label>SOBRE</ion-label>
       </ion-item>
-      <ion-item button routerLink="/main/contato">
+      <ion-item button routerLink="/contato">
         <ion-label>CONTATO</ion-label>
       </ion-item>
-      
-  </ion-content>
-</ion-menu>
-<ion-router-outlet id="menu"></ion-router-outlet>
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-menu-button menu="menu"></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-
-<ion-content>
-  <ion-tabs>
-    <ion-tab-bar color="" slot="bottom">
-
-
-      <ion-tab-button tab="home">
-        <ion-icon name="home-outline"></ion-icon>
-        <ion-label>Home</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="mapa">
-        <ion-icon name="map-outline"></ion-icon>
-        <ion-label>Mapa</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="menu"></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-menu-button menu="menu"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
