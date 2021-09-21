@@ -2,37 +2,16 @@
   <ion-header>
     <ion-toolbar>
       <ion-title>SOBRE A CLINICA</ion-title>
+
     </ion-toolbar>
+
   </ion-header>
 
-  <ion-tabs>
-    <ion-tab-bar color="" slot="bottom">
+ 
 
-      <ion-tab-button tab="home">
-        <ion-icon name="home-outline"></ion-icon>
-        <ion-label>Home</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button routerLink="consultas">
-        <ion-icon name="medical-outline"></ion-icon>
-        <ion-label>Consultas</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="mapa">
-        <ion-icon name="map-outline"></ion-icon>
-        <ion-label>Mapa</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="perfil">
-        <ion-icon name="person-circle-outline"></ion-icon>
-        <ion-label>Perfil</ion-label>
-      </ion-tab-button>
-
-    </ion-tab-bar>
-  </ion-tabs>
-
-  <ion-menu contentId="menu" menuId="menu" side="start" type="overlay">
+  <ion-menu enable-menu-with-back-views=“true” contentId="menu" menuId="menu" side="start" type="overlay">
     <ion-header>
+      
       <ion-toolbar>
         <ion-title>MENU</ion-title>
       </ion-toolbar>
@@ -55,14 +34,17 @@
       <ion-buttons slot="end">
         <ion-menu-button menu="menu"></ion-menu-button>
       </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home-logada"></ion-back-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
-<ion-item-divider></ion-item-divider>
+  
 
 <ion-grid>
+  <ion-row>
   <ion-card>
-    <ion-card color="light">
+    <ion-card color="dark">
       <div class="img-wrapper">
         <img src="./assets/vets/1.png" />
         <!--     <ion-button color="light">
@@ -85,7 +67,7 @@
 
     <ion-item-divider></ion-item-divider>
 
-    <ion-card color="light">
+    <ion-card color="dark">
       <div class="img-wrapper">
         <img src="./assets/vets/2.png" />
         <!-- <ion-button color="light">
@@ -108,9 +90,8 @@
 
 
 <ion-item-divider></ion-item-divider>
-<ion-item-divider></ion-item-divider>
 
-    <ion-card color="light">
+    <ion-card color="dark">
       <div class="img-wrapper">
         <img src="./assets/vets/3.png" />
         <!-- <ion-button color="light">
@@ -124,17 +105,89 @@
           <div style="display: flex;" class="ion-justify-content-center">
             <ion-icon name="information-outline" color="medium">
             </ion-icon>
-            <p>Cardilogista
+            <p>Cardiologista
             </p>
           </div>
         </ion-text>
       </ion-card-content>
     </ion-card>
 
+    <ion-item-divider></ion-item-divider>
+
+
+    <ion-card color="dark">
+      <div class="img-wrapper">
+        <img src="./assets/vets/3.png" />
+        <!-- <ion-button color="light">
+             <ion-icon slot="icon-only" name="camera-outline" color="medium">
+            </ion-icon>
+          </ion-button> -->
+      </div>
+      <ion-card-content class="ion-text-center">
+        <h2>Livia</h2>
+        <ion-text color="medium">
+          <div style="display: flex;" class="ion-justify-content-center">
+            <ion-icon name="information-outline" color="medium">
+            </ion-icon>
+            <p>Endrocrinologista
+            </p>
+          </div>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-card color="dark">
+      <div class="img-wrapper">
+        <img src="./assets/vets/4.png" />
+        <!-- <ion-button color="light">
+             <ion-icon slot="icon-only" name="camera-outline" color="medium">
+            </ion-icon>
+          </ion-button> -->
+      </div>
+      <ion-card-content class="ion-text-center">
+        <h2>Leonardo</h2>
+        <ion-text color="medium">
+          <div style="display: flex;" class="ion-justify-content-center">
+            <ion-icon name="information-outline" color="medium">
+            </ion-icon>
+            <p>Cirurgia
+            </p>
+          </div>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-card color="dark">
+      <div class="img-wrapper">
+        <img src="./assets/vets/5.png" />
+        <!-- <ion-button color="light">
+             <ion-icon slot="icon-only" name="camera-outline" color="medium">
+            </ion-icon>
+          </ion-button> -->
+      </div>
+      <ion-card-content class="ion-text-center">
+        <h2>Carlos</h2>
+        <ion-text color="medium">
+          <div style="display: flex;" class="ion-justify-content-center">
+            <ion-icon name="information-outline" color="medium">
+            </ion-icon>
+            <p>Ortopedista
+            </p>
+          </div>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+
+    
   </ion-card>
 
-
+</ion-row>
 </ion-grid>
 
 
 </ion-content>
+

@@ -4,6 +4,33 @@
     <ion-title>MAPAS</ion-title>
   </ion-toolbar> 
 
+  <ion-menu enable-menu-with-back-views=“true” contentId="menu" menuId="menu" side="start" type="overlay">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>MENU</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-item button routerLink="/sobre">
+        <ion-label>SOBRE</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/contato">
+        <ion-label>CONTATO</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/home">
+        <ion-label>LOGOUT</ion-label>
+      </ion-item>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="menu"></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-menu-button menu="menu"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
   <ion-content>MAPAS AQUI
 
 
