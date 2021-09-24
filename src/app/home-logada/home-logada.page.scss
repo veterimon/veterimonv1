@@ -1,0 +1,32 @@
+ion-toolbar{
+    ion-title{
+        padding-top: 38px;
+        text-align: center;
+    }
+}
+
+
+ion-slides{
+size: 80%;
+ion-slide{  
+    display: flow-root;
+    ion-img{
+        overflow: visible;
+        margin-left: 40%;
+        padding-top: 80px;
+        width: 25%;
+        margin: auto;
+    }
+    h2{
+        padding-top: 1%;
+    }
+    p{
+        
+        margin-left: 35%;
+        text-align: justify;
+        width: 30%;
+        padding-block-end: 5%;
+    }
+    
+}
+}
