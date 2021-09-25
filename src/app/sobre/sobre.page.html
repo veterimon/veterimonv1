@@ -1,18 +1,23 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-title>SOBRE A CLINICA</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="home-outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>SOBRE A CLINICA</ion-title>
-
-    </ion-toolbar>
-
-  </ion-header>
-
-
 
   <ion-menu enable-menu-with-back-views=“true” contentId="menu" menuId="menu" side="start" type="overlay">
     <ion-header>
 
       <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button text="" icon="home-outline">
+          </ion-back-button>
+        </ion-buttons>
         <ion-title>MENU</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -34,9 +39,7 @@
       <ion-buttons slot="end">
         <ion-menu-button menu="menu"></ion-menu-button>
       </ion-buttons>
-      <ion-buttons slot="start">
-        <ion-back-button defaultHref="home-logada"></ion-back-button>
-      </ion-buttons>
+
     </ion-toolbar>
   </ion-header>
 
@@ -44,7 +47,7 @@
   <ion-grid>
     <ion-row>
       <ion-card>
-        <ion-card color="dark">
+        <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/1.png" />
             <!--     <ion-button color="light">
@@ -67,7 +70,7 @@
 
         <ion-item-divider></ion-item-divider>
 
-        <ion-card color="dark">
+        <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/2.png" />
             <!-- <ion-button color="light">
@@ -91,7 +94,7 @@
 
         <ion-item-divider></ion-item-divider>
 
-        <ion-card color="dark">
+        <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/3.png" />
             <!-- <ion-button color="light">
@@ -115,7 +118,7 @@
         <ion-item-divider></ion-item-divider>
 
 
-        <ion-card color="dark">
+        <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/6.png" />
             <!-- <ion-button color="light">
@@ -138,7 +141,7 @@
 
         <ion-item-divider></ion-item-divider>
 
-        <ion-card color="dark">
+        <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/4.png" />
             <!-- <ion-button color="light">
@@ -152,7 +155,7 @@
               <div style="display: flex;" class="ion-justify-content-center">
                 <ion-icon name="information-outline" color="medium">
                 </ion-icon>
-                <p>Cirurgia
+                <p>Neurocirurgião
                 </p>
               </div>
             </ion-text>
@@ -161,7 +164,7 @@
 
         <ion-item-divider></ion-item-divider>
 
-        <ion-card color="dark">
+        <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/5.png" />
             <!-- <ion-button color="light">
