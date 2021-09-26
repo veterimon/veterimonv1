@@ -10,7 +10,10 @@ const routes: Routes = [
     component: HomeLogadaPage,
 
     children: [
-      
+      {
+        path: 'noticias',
+        loadChildren: () => import('../noticias/noticias.module').then(m => m.NoticiasPageModule)
+      },
 
       {
         path: 'consultas',

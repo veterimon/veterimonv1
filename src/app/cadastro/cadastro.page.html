@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>CADASTRO</ion-title>
   </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+  <img class="signup-logo" src="assets/logo/logo.png">
 </ion-header>
 
 <ion-content>
@@ -17,15 +20,15 @@
           </div>
           <div padding>
             <h2></h2>
-            
+
             <ion-item>
               <ion-input name="name" type="text" placeholder="Nome" ngModel required></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="name" type="text" placeholder="Endereço" ngModel required></ion-input>
+              <ion-input name="name" type="street-address" placeholder="Endereço" ngModel required></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="name" type="text" placeholder="Telefone" ngModel required></ion-input>
+              <ion-input name="name" type="tel" placeholder="Telefone" ngModel required></ion-input>
             </ion-item>
             <ion-item>
               <ion-input name="email" type="email" placeholder="email@email.com" ngModel required></ion-input>
@@ -35,8 +38,10 @@
             </ion-item>
           </div>
 
-          <ion-button (click)="presentAlert()" routerLink="/home" type="submit" [disabled]="form.invalid"
+          <ion-button shape="round" (click)="presentAlert()" routerLink="/home" type="submit" [disabled]="form.invalid"
             expand="block">Concluir</ion-button>
+
+
 
         </ion-col>
       </ion-row>

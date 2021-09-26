@@ -1,13 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>LOGIN</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-header class="ion-no-border">
+    <img class="logo-img" src="assets/logo/logo.png">
+</ion-header>
+
 <ion-content>
+  
   <form #form="ngForm" (ngSubmit)="(form)">
     <ion-grid>
 
@@ -18,14 +22,16 @@
           <div padding>
             <h2></h2>
             <ion-item>
+              <ion-label position="floating">E-mail</ion-label>
               <ion-input name="email" type="email" placeholder="email@email.com" ngModel required></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="password" type="password" placeholder="Senha" ngModel required></ion-input>
+              <ion-label position="floating">Senha</ion-label>
+              <ion-input name="password" type="password" placeholder="********" ngModel required></ion-input>
             </ion-item>
           </div>
 
-          <ion-button (click)="presentAlert()" routerLink="/home-logada" type="submit" [disabled]="form.invalid"
+          <ion-button (click)="presentAlert()" routerLink="/home-logada/noticias" type="submit" [disabled]="form.invalid"
             expand="block">Concluir</ion-button>
 
         </ion-col>

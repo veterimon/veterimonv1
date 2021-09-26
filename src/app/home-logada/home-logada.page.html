@@ -1,30 +1,27 @@
-<ion-content [fullscreen]="true" color="light">
-  <ion-toolbar>
-    <ion-title>HOME LOGADA</ion-title>
-  </ion-toolbar> 
 
-  <ion-buttons slot="start">
-    <ion-back-button defaultHref="home-logada"></ion-back-button>
-  </ion-buttons>
-
-  <ion-tabs>
+<ion-tabs>
     <ion-tab-bar color="" slot="bottom">
-  
+
+      <ion-tab-button tab="noticias">
+        <ion-icon name="newspaper-outline"></ion-icon>
+        <ion-label>Noticias</ion-label>
+      </ion-tab-button>
+
       <ion-tab-button tab="consultas">
         <ion-icon name="medical-outline"></ion-icon>
         <ion-label>Consultas</ion-label>
       </ion-tab-button>
-  
+
       <ion-tab-button tab="mapa">
         <ion-icon name="map-outline"></ion-icon>
         <ion-label>Mapa</ion-label>
       </ion-tab-button>
-  
+
       <ion-tab-button tab="perfil">
         <ion-icon name="person-circle-outline"></ion-icon>
         <ion-label>Perfil</ion-label>
       </ion-tab-button>
-  
+
     </ion-tab-bar>
   </ion-tabs>
   <ion-menu contentId="menu" menuId="menu" side="start" type="overlay">
@@ -54,34 +51,4 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-item-divider></ion-item-divider>
-    <ion-slides pager="true">
-      <ion-slide>
-         <ion-img src="/assets/home-logada/img1.png"></ion-img>  
-        <h2>Noticia 1</h2>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra in urna rutrum maximus. Quisque vitae ex sed purus volutpat aliquam quis sit amet odio.
-        Aenean dignissim tortor risus, porttitor mollis enim viverra non. </p>
-      </ion-slide>
-      <ion-slide>
-        <ion-img src="/assets/home-logada/img2.png"></ion-img> 
-        <h2>Noticia 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra in urna rutrum maximus. Quisque vitae ex sed purus volutpat aliquam quis sit amet odio.
-          Aenean dignissim tortor risus, porttitor mollis enim viverra non. 
-        </p>
-      </ion-slide>
-      <ion-slide>
-        <ion-img src="/assets/home-logada/img3.png"></ion-img>
-        <h2>Noticia 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra in urna rutrum maximus. Quisque vitae ex sed purus volutpat aliquam quis sit amet odio.
-          Aenean dignissim tortor risus, porttitor mollis enim viverra non. 
-        </p>
-      </ion-slide>
-      <ion-slide>
-        <ion-img src="/assets/home-logada/img4.png"></ion-img>
-        <h2>Noticia 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra in urna rutrum maximus. Quisque vitae ex sed purus volutpat aliquam quis sit amet odio.</p>
-      </ion-slide>
-    </ion-slides>
-  </ion-content>
   

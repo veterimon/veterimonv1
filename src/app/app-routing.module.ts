@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'home-logada',
     loadChildren: () => import('./home-logada/home-logada.module').then( m => m.HomeLogadaPageModule)
   },
+  {
+    path: 'noticias',
+    loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
+  },
 
   
 
