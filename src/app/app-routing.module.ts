@@ -59,7 +59,15 @@ const routes: Routes = [
     path: 'noticias',
     loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
   },
-
+/*   {
+    path: 'consultas-agendadas',
+    loadChildren: () => import('./consultas-agendadas/consultas-agendadas.module').then( m => m.ConsultasAgendadasPageModule)
+  }, */
+/*   {
+    path: 'consultas-passadas',
+    loadChildren: () => import('./consultas-passadas/consultas-passadas.module').then( m => m.ConsultasPassadasPageModule)
+  },
+ */
   
 
 ];

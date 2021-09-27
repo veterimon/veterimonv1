@@ -1,5 +1,5 @@
 ion-card {
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.678);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.678);
     overflow: visible;
     margin: 16px 0 30px;
     position: relative;
@@ -20,28 +20,10 @@ ion-card {
         height: 80px;
         margin: auto;
       }
-  
-      /* ion-button {
-        --border-width: 1px;
-        --border-color: var(--ion-color-light-shade);
-        --border-style: solid;
-        --padding-start: 0;
-        --padding-end: 0;
-        --padding-bottom: 0;
-        --padding-top: 0;
-  
-        --border-radius: 50%;
-        height: 26px;
-        width: 26px;
-  
-        position: absolute;
-        right: -10px;
-        bottom: -10px;
-   */
+
         ion-icon {
           width: 100px;
           height: 100px;
         }
       }
     }
-  // }

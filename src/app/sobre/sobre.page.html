@@ -1,48 +1,18 @@
-<ion-header>
-
-  <ion-toolbar>
-    <ion-title>SOBRE A CLINICA</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button text="" icon="home-outline"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-
-  <ion-menu enable-menu-with-back-views=“true” contentId="menu" menuId="menu" side="start" type="overlay">
-    <ion-header>
-
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-back-button text="" icon="home-outline">
-          </ion-back-button>
-        </ion-buttons>
-        <ion-title>MENU</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-item button routerLink="/sobre">
-        <ion-label>SOBRE</ion-label>
-      </ion-item>
-      <ion-item button routerLink="/contato">
-        <ion-label>CONTATO</ion-label>
-      </ion-item>
-      <ion-item button routerLink="/home">
-        <ion-label>LOGOUT</ion-label>
-      </ion-item>
-    </ion-content>
-  </ion-menu>
-  <ion-router-outlet id="menu"></ion-router-outlet>
   <ion-header>
     <ion-toolbar>
-      <ion-buttons slot="end">
-        <ion-menu-button menu="menu"></ion-menu-button>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
       </ion-buttons>
-
     </ion-toolbar>
   </ion-header>
 
+
+  <div style="display: flex;" class="ion-justify-content-center">
+    <ion-text color="dark">
+      <h4>SOBRE A CLINICA</h4>
+    </ion-text>
+  </div>
 
   <ion-grid>
     <ion-row>
@@ -50,10 +20,6 @@
         <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/1.png" />
-            <!--     <ion-button color="light">
-            <ion-icon slot="icon-only" name="camera-outline" color="medium">
-            </ion-icon>
-          </ion-button> -->
           </div>
           <ion-card-content class="ion-text-center">
             <h2>Paloma</h2>
@@ -72,11 +38,7 @@
 
         <ion-card color="light">
           <div class="img-wrapper">
-            <img src="./assets/vets/2.png" />
-            <!-- <ion-button color="light">
-             <ion-icon slot="icon-only" name="camera-outline" color="medium">
-            </ion-icon>
-          </ion-button> -->
+            <img src="./assets/vets/2.png" />7
           </div>
           <ion-card-content class="ion-text-center">
             <h2>Patrícia</h2>
@@ -97,10 +59,6 @@
         <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/3.png" />
-            <!-- <ion-button color="light">
-             <ion-icon slot="icon-only" name="camera-outline" color="medium">
-            </ion-icon>
-          </ion-button> -->
           </div>
           <ion-card-content class="ion-text-center">
             <h2>Jamille</h2>
@@ -121,10 +79,6 @@
         <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/6.png" />
-            <!-- <ion-button color="light">
-             <ion-icon slot="icon-only" name="camera-outline" color="medium">
-            </ion-icon>
-          </ion-button> -->
           </div>
           <ion-card-content class="ion-text-center">
             <h2>Livia</h2>
@@ -144,10 +98,6 @@
         <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/4.png" />
-            <!-- <ion-button color="light">
-             <ion-icon slot="icon-only" name="camera-outline" color="medium">
-            </ion-icon>
-          </ion-button> -->
           </div>
           <ion-card-content class="ion-text-center">
             <h2>Leonardo</h2>
@@ -167,10 +117,7 @@
         <ion-card color="light">
           <div class="img-wrapper">
             <img src="./assets/vets/5.png" />
-            <!-- <ion-button color="light">
-             <ion-icon slot="icon-only" name="camera-outline" color="medium">
-            </ion-icon>
-          </ion-button> -->
+
           </div>
           <ion-card-content class="ion-text-center">
             <h2>Carlos</h2>
@@ -192,4 +139,3 @@
   </ion-grid>
 
 
-</ion-content>

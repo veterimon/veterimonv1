@@ -1,65 +1,56 @@
-<ion-content [fullscreen]="true">
+<ion-header>
   <ion-toolbar>
-      <ion-title>Entre em Contato</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
+</ion-header>
 
-  <ion-menu contentId="menu" menuId="menu" side="start" type="overlay">
-      <ion-header>
-          <ion-toolbar>
-              <ion-title>MENU</ion-title>
-          </ion-toolbar>
-      </ion-header>
-      <ion-content>
-          <ion-item button routerLink="/main/sobre">
-              <ion-label>SOBRE</ion-label>
-          </ion-item>
-          <ion-item button routerLink="/main/contato">
-              <ion-label>CONTATO</ion-label>
-          </ion-item>
-      </ion-content>
-  </ion-menu>
-  <ion-router-outlet id="menu"></ion-router-outlet>
-  <ion-header>
-      <ion-toolbar>
-          <ion-buttons slot="end">
-              <ion-menu-button menu="menu"></ion-menu-button>
-          </ion-buttons>
-      </ion-toolbar>
-  </ion-header>
+<div style="display: flex;" class="ion-justify-content-center">
+  <ion-text color="dark">
+    <h4>CONTATO</h4>
+  </ion-text>
+</div>
+
+<ion-content>
+  <ion-card-content>
+    <form>
+
+      <ion-item>
+        <ion-label position="floating">Escreva aqui sua mensagem</ion-label>
+        <ion-input type="text" required></ion-input>
+        <ion-textarea rows="4" cols="20" placeholder=""></ion-textarea>
+      </ion-item>
+
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label>Dúvida</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sugestão</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Reclamação</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-list>
+      <ion-button type="submit" color="danger" expand="block">Enviar</ion-button>
+    </form>
+  </ion-card-content>
+</ion-content>
 
 
-
-  <ion-card>
-      <ion-card-header>
-          <ion-card-title>Para entrar em contato com nosco basta is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book. </ion-card-title>
-      </ion-card-header>
-  </ion-card>
-
-  <ion-card>
-      <ion-card-header>
-          <ion-card-title>Entre em contato através: </ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content>
-          <ion-icon name="call-outline"></ion-icon> (11)9 9999-9999
-          <br>
-          <ion-icon name="logo-whatsapp"></ion-icon> (11)8 8888-8888
-          <br>
-          <ion-icon name="mail-outline"></ion-icon> veterimon@pokemon.com
-      </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-      <ion-card-header>
-          <ion-card-title>Nossas Redes: </ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content>
-          <center>
-              <ion-icon name="logo-instagram" class="instagram"> </ion-icon> &nbsp;
-              <ion-icon name="logo-facebook" class="facebook"> </ion-icon> &nbsp;
-              <ion-icon name="logo-twitter" class="twitter"> </ion-icon>
-          </center>
-      </ion-card-content>
-  </ion-card>
+<ion-card>
+  <ion-card-content>
+    <ion-text color="dark">
+      <h2 style="text-align: center">Redes Sociais</h2>
+    </ion-text>
+        <div style="display: flex;" class="ion-justify-content-center">
+          <ion-icon name="logo-instagram" class="instagram"> </ion-icon>
+          <ion-icon name="logo-facebook" class="facebook"> </ion-icon>
+          <ion-icon name="logo-twitter" class="twitter"> </ion-icon>
+        </div>
+  </ion-card-content>
+</ion-card>
