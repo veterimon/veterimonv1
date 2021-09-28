@@ -1,6 +1,5 @@
 ion-card {
-    overflow: visible;
-
+    overflow: hidden;
     position: relative;
     padding-top: 70px;
     width: 90%;
@@ -11,13 +10,13 @@ ion-card {
     .img-wrapper {
       position: absolute;
       left: 50%;
-      top: -1%;
+      top: -5%;
       transform: translateX(-50%);
       img {
-        border-radius: 15px;
+        border-radius: 10px;
         width: 90px;
         height: 90px;
-        margin: auto;
+        margin: 1px;
       }
 
         ion-icon {
