@@ -7,11 +7,11 @@
 </ion-header>
 
 <ion-header class="ion-no-border">
-    <img class="logo-img" src="assets/logo/logo5.png">
+  <img class="logo-img" src="assets/logo/logo5.png">
 </ion-header>
 
 <ion-content>
-  
+
   <form #form="ngForm" (ngSubmit)="(form)">
     <ion-grid>
 
@@ -30,15 +30,12 @@
               <ion-input name="password" type="password" placeholder="********" ngModel required></ion-input>
             </ion-item>
           </div>
+          <ion-button (click)="presentAlert()" routerLink="/home-logada/noticias" type="submit"
+            [disabled]="form.invalid" expand="block">Concluir</ion-button>
 
-          <ion-button (click)="presentAlert()" routerLink="/home-logada/noticias" type="submit" [disabled]="form.invalid"
-            expand="block">Concluir</ion-button>
-
+            
         </ion-col>
       </ion-row>
     </ion-grid>
   </form>
 </ion-content>
-
-
-
