@@ -3,12 +3,5 @@
 
 
 
-### Screenshots
-
-
-[<img src="/src/assets/screenshots/HOME.png" align="left"
-width="200"
-    hspace="10" vspace="10">](/src/assets/screenshots/HOME.png)
-
 
 
